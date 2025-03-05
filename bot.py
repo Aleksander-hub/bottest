@@ -5,7 +5,7 @@ from aiogram.types import Message
 from aiogram.filters import Command
 
 # Укажите ваш токен, который получили от BotFather
-TOKEN = "7266456982:AAHD3565fBvroH2CqC3dHrOKO7nquuQeQzI"
+TOKEN = "BOT_TOKEN"
 
 # Включаем логирование
 logging.basicConfig(level=logging.INFO)
