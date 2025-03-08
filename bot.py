@@ -1,11 +1,14 @@
 import asyncio
 import logging
+import os
+from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message
 from aiogram.filters import Command
 
-# Укажите ваш токен, который получили от BotFather
-TOKEN = "BOT_TOKEN"
+# Загружаем переменные окружения
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Включаем логирование
 logging.basicConfig(level=logging.INFO)
